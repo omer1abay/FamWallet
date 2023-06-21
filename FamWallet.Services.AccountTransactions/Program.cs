@@ -10,8 +10,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Remove("sub"); //artýk sub olarak gelecek map'lenmeden
-builder.Services.AddControllers(opt => {
-    opt.Filters.Add(new AuthorizeFilter()); //tüm controller'lara ekledik
+builder.Services.AddControllers(opts =>
+{
+    opts.Filters.Add(new AuthorizeFilter());
 });
 builder.Services.AddScoped<ITransactionService, TransactionService>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies()); //Projenin baðlý olduðu tüm mapper'larý tarar, Profile'dan inherit alan nesneleri tarar.
