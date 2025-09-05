@@ -8,7 +8,7 @@ namespace FamWallet.Services.Campaign.Services
     {
         public Task<ResponseDto<List<DiscountModel>>> GetCampaign(Expression<Func<DiscountModel,bool>> filter = null);
         public Task<ResponseDto<DiscountModel>> AddCampaing(DiscountModel model);
-        public Task<ResponseDto<DiscountModel>> UpdateCampaing(DiscountModel model);
+        public Task<ResponseDto<UpdateDiscountDto>> UpdateCampaing(UpdateDiscountDto model);
         public Task<ResponseDto<NoContent>> DeleteCampaignAsync(DiscountModel model);
     }
 }
