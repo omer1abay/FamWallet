@@ -38,12 +38,12 @@ namespace FamWallet.Services.Campaign.Services
             return ResponseDto<List<DiscountModel>>.Success(data,200);
         }
 
-        public async Task<ResponseDto<DiscountModel>> UpdateCampaing(DiscountModel model)
+        public async Task<ResponseDto<UpdateDiscountDto>> UpdateCampaing(UpdateDiscountDto model)
         {
             var added = _context.Entry(model);
             added.State = EntityState.Modified;
             await _context.SaveChangesAsync();
-            return ResponseDto<DiscountModel>.Success(model,204);
+            return ResponseDto<UpdateDiscountDto>.Success(model,204);
         }
     }
 }
