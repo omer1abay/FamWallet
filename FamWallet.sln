@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FamWallet.Services.MoneyTra
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccountTransactions", "AccountTransactions", "{140FD076-10E9-465E-980C-A79548313788}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamWallet.Services.AccountTransactions", "FamWallet.Services.AccountTransactions\FamWallet.Services.AccountTransactions.csproj", "{D6166506-A714-4152-83D7-16AB209BBFD0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamWallet.Services.AccountTransactions", "Services\FamWallet.Services.AccountTransactions\FamWallet.Services.AccountTransactions.csproj", "{D6166506-A714-4152-83D7-16AB209BBFD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
