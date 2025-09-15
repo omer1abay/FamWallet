@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Shared\FamWallet.Shared\FamWallet.Shared.csproj" />
+    <ProjectReference Include="..\..\Shared\FamWallet.Shared\FamWallet.Shared.csproj" />
   </ItemGroup>
 
 </Project>
