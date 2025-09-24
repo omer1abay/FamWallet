@@ -1,0 +1,6 @@
+@FamWallet.Gateway_HostAddress = http://localhost:5018
+
+GET {{FamWallet.Gateway_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

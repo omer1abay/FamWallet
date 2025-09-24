@@ -10,8 +10,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 
-builder.Services.AddControllers(opt => {
-    opt.Filters.Add(new AuthorizeFilter()); //tüm controller'lara ekledik
+builder.Services.AddControllers(opt =>
+{
+    //opt.Filters.Add(new AuthorizeFilter()); //tüm controller'lara ekledik
 });
 builder.Services.AddScoped<ICampaignService, CampaignService>();
 builder.Services.AddHttpContextAccessor();
@@ -40,8 +41,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseAuthorization();
-app.UseAuthentication(); //authentication iþlemi
+//app.UseAuthorization();
+//app.UseAuthentication(); //authentication iþlemi
 app.MapControllers();
 
 app.Run();

@@ -16,10 +16,10 @@ namespace FamWallet.Services.Campaign.Controllers
         private readonly ICampaignService _service;
         private ISharedIdentityService identityService;
 
-        public DiscountController(ICampaignService service,ISharedIdentityService sharedIdentityService)
+        public DiscountController(ICampaignService service)
         {
             _service = service;
-            identityService = sharedIdentityService;
+            //identityService = sharedIdentityService;
         }
 
         [HttpPost]

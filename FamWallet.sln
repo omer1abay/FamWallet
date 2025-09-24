@@ -25,6 +25,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccountTransactions", "Acco
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamWallet.Services.AccountTransactions", "Services\FamWallet.Services.AccountTransactions\FamWallet.Services.AccountTransactions.csproj", "{D6166506-A714-4152-83D7-16AB209BBFD0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamWallet.Gateway", "Gateway\FamWallet.Gateway\FamWallet.Gateway.csproj", "{25F2DB60-2110-4D8A-869A-6080BA6D431F}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81DDED9D-158B-E303-5F62-77A2896D2A5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +57,14 @@ Global
 		{D6166506-A714-4152-83D7-16AB209BBFD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6166506-A714-4152-83D7-16AB209BBFD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6166506-A714-4152-83D7-16AB209BBFD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25F2DB60-2110-4D8A-869A-6080BA6D431F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25F2DB60-2110-4D8A-869A-6080BA6D431F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25F2DB60-2110-4D8A-869A-6080BA6D431F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25F2DB60-2110-4D8A-869A-6080BA6D431F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +78,7 @@ Global
 		{49AA9193-46AC-4A50-B079-B6E9141595B8} = {3D87F5F1-80E8-45E6-9D2C-A48BD40FBA20}
 		{140FD076-10E9-465E-980C-A79548313788} = {452C5011-3C52-448A-9E56-EF6C122D005B}
 		{D6166506-A714-4152-83D7-16AB209BBFD0} = {140FD076-10E9-465E-980C-A79548313788}
+		{25F2DB60-2110-4D8A-869A-6080BA6D431F} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3BCAF353-968B-4D2F-BA85-DC49E223A61C}

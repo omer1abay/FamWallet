@@ -1,0 +1,6 @@
+services:
+  famwallet.gateway:
+    image: ${DOCKER_REGISTRY-}famwalletgateway
+    build:
+      context: .
+      dockerfile: Gateway/FamWallet.Gateway/Dockerfile
