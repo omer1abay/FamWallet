@@ -4,7 +4,8 @@
       "commandName": "DockerCompose",
       "commandVersion": "1.0",
       "serviceActions": {
-        "famwallet.gateway": "StartDebugging"
+        "famwallet.gateway": "StartDebugging",
+        "famwallet.services.campaign": "StartDebugging"
       }
     }
   }

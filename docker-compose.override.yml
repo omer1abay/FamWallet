@@ -12,3 +12,21 @@ services:
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
       - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+  famwallet.services.campaign:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ConnectionStrings:DefaultConnection=Server=sqlserver,1433;Database=CampaignDb;User=sa;Password=Omer1bay+"
+    ports:
+      - "80"
+    depends_on:
+      - sqlserver
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "Omer1bay+"
+    ports:
+      - "1433:1433"
+    volumes:
+      - campaign_db_volume:/var/opt/mssql

@@ -4,3 +4,12 @@ services:
     build:
       context: .
       dockerfile: Gateway/FamWallet.Gateway/Dockerfile
+
+  famwallet.services.campaign:
+    image: ${DOCKER_REGISTRY-}famwalletservicescampaign
+    build:
+      context: .
+      dockerfile: Services/Campaign/FamWallet.Services.Campaign/Dockerfile
+
+volumes:
+  campaign_db_volume:
